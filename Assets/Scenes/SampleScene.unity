@@ -310,6 +310,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 335556087}
+  - component: {fileID: 335556088}
   m_Layer: 0
   m_Name: Right Foot IK_target
   m_TagString: Untagged
@@ -332,6 +333,34 @@ Transform:
   m_Father: {fileID: 1190596005}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &335556088
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 335556086}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 95a8098103f299b44be14d0de50e7fe3, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  isMovingForward: 0
+  terrainLayer:
+    serializedVersion: 2
+    m_Bits: 1
+  body: {fileID: 1605652801}
+  otherFoot: {fileID: 736046935}
+  speed: 4
+  stepDistance: 0.5
+  stepLength: 0.5
+  sideStepLength: 0.1
+  stepHeight: 0.3
+  footOffset: {x: 0, y: 0, z: 0}
+  footRotOffset: {x: -120, y: 180, z: 0}
+  footYPosOffset: 0.1
+  rayStartYOffset: 0
+  rayLength: 2
 --- !u!4 &411928337 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 2559285840627121667, guid: a8d7f5caffe3628408c0054b946d808f,
@@ -676,6 +705,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 736046934}
+  - component: {fileID: 736046935}
   m_Layer: 0
   m_Name: Left Foot IK_target
   m_TagString: Untagged
@@ -698,6 +728,34 @@ Transform:
   m_Father: {fileID: 1681384347}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &736046935
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 736046933}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 95a8098103f299b44be14d0de50e7fe3, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  isMovingForward: 0
+  terrainLayer:
+    serializedVersion: 2
+    m_Bits: 1
+  body: {fileID: 1605652801}
+  otherFoot: {fileID: 335556088}
+  speed: 4
+  stepDistance: 0.5
+  stepLength: 0.5
+  sideStepLength: 0.1
+  stepHeight: 0.3
+  footOffset: {x: 0, y: 0, z: 0}
+  footRotOffset: {x: -120, y: 180, z: 0}
+  footYPosOffset: 0.1
+  rayStartYOffset: 0
+  rayLength: 2
 --- !u!4 &766702043 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 6515712193588681746, guid: a8d7f5caffe3628408c0054b946d808f,
